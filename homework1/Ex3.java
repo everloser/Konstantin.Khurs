@@ -2,8 +2,8 @@ package homework1;
 import java.util.*;
 /**
  * This program demonstrates
- *������� ������������� ��������� ��������� a � b, ����������, ����� �� ��� ��������� �������
- *������� ��������� �������� r.
+ * Имеется прямоугольное отверстие размерами a и b, определить,
+ * можно ли его полностью закрыть круглой картонкой радиусом r.
  * @version
  * @author
  */
@@ -11,6 +11,8 @@ public class Ex3
 {
    public static void main(String[] args)
 
+ // решил вставить обработку исключения, на случай если вводить вместо int всякое разное
+ 
    {
       boolean d = true;
        	do
@@ -19,13 +21,14 @@ public class Ex3
     		try 
         		{
     			System.out.println("Input side \"a\""); 
-    			int a = go.nextInt();
+    			int a = go.nextInt(); 	
     			System.out.println("Input side \"b\""); 
     			int b = go.nextInt();
     			System.out.println("Input radius");
     			int r = go.nextInt();
     			go.close();
-    				if (4*r*r >= a*a + b*b)
+ // формула, проверяющая условия закрывания
+    			    if (4*r*r >= a*a + b*b)
     				System.out.println("Rectangle is closed by the circle");
     				else
     				System.out.println("Rectangle isn't closed by the circle");

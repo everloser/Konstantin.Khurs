@@ -3,7 +3,13 @@ package homework1;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-
+/**
+ * This program demonstrates
+ * дополнительное задание вычисляющее х по формуле
+ * реализовано с использованием Swing
+ * @version
+ * @author
+ */
 public class BonusEx
 {
    public static void main(String[] args)
@@ -27,7 +33,8 @@ class FormulaFrame extends JFrame
 
    public FormulaFrame()
    {
-      JTextField xField = new JTextField();
+// добавляем верхнюю панель, с полями для ввода значений  
+	  JTextField xField = new JTextField();
       xField.setFont(new Font("Serif", Font.BOLD, 20));
       JTextField tField = new JTextField();
       tField.setFont(new Font("Serif", Font.BOLD, 20));
@@ -49,19 +56,21 @@ class FormulaFrame extends JFrame
       northPanel.add(sField);
            add(northPanel, BorderLayout.NORTH);
 
+ // добавляем центральную панель с изображением фонрмулы
       JLabel formula = new JLabel();
       ImageIcon icon = new ImageIcon("formula.gif");
       formula.setIcon(icon);
            add(formula, BorderLayout.CENTER);
        
 
+  // добавляем нижнюю панель с кнопками, производящими расчет и очистку значений
       JPanel southPanel = new JPanel();
       southPanel.setLayout(new GridLayout(1, 3));
       JButton resultButton = new JButton("Get Y");
       southPanel.add(resultButton);
-      JTextField Yres = new JTextField();
-      Yres.setFont(new Font("Serif", Font.BOLD, 20));
-      southPanel.add(Yres);
+      JTextField yres = new JTextField();
+      yres.setFont(new Font("Serif", Font.BOLD, 20));
+      southPanel.add(yres);
       JButton clearTXT = new JButton("Clear all");      
       southPanel.add(clearTXT);
       resultButton.addActionListener(new ActionListener()
@@ -71,9 +80,10 @@ class FormulaFrame extends JFrame
                double x = Double.valueOf(xField.getText());
                double t = Double.valueOf(tField.getText());
                double s = Double.valueOf(sField.getText());
+  // формула
                double y =((Math.sin(Math.pow(x,t)))*(Math.sin(Math.pow(x,t))))/(Math.sqrt(1+Math.pow(x,s)));
                String yy = String.format("%.5f", y);
-               Yres.setText(yy);
+               yres.setText(yy);
             }
          });
       
@@ -81,7 +91,7 @@ class FormulaFrame extends JFrame
       {
          public void actionPerformed(ActionEvent event)
          {
-            Yres.setText("");
+            yres.setText("");
             xField.setText("");
             tField.setText("");
             sField.setText("");

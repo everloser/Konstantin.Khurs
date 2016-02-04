@@ -2,8 +2,8 @@ package homework1;
 import java.util.*;
 /**
  * This program demonstrates
- * Имеется целое число (любое), это число — сумма денег в рублях. Вывести это число,
- * добавив к нему слово «рублей» в правильном падеже.
+ * РРјРµРµС‚СЃСЏ С†РµР»РѕРµ С‡РёСЃР»Рѕ вЂ” СЃСѓРјРјР° РґРµРЅРµРі РІ СЂСѓР±Р»СЏС…. Р’С‹РІРµСЃС‚Рё СЌС‚Рѕ С‡РёСЃР»Рѕ,
+ * РґРѕР±Р°РІРёРІ Рє РЅРµРјСѓ СЃР»РѕРІРѕ В«СЂСѓР±Р»РµР№В» РІ РїСЂР°РІРёР»СЊРЅРѕРј РїР°РґРµР¶Рµ.
  * @version
  * @author
  */
@@ -13,30 +13,30 @@ public class Ex4
 
    {
       Scanner go = new Scanner(System.in);
-      System.out.println("Введите число");
+      System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ");
       int byr = go.nextInt();
       go.close();
       int by = byr/10;
         if (by %10 == 1)
-          System.out.println(byr + " рублей");
+          System.out.println(byr + " СЂСѓР±Р»РµР№");
         else
     	  {
         	switch (byr%10)
         	{
         	  case 1:
-        		  System.out.println(byr + " рубль");
+        		  System.out.println(byr + " СЂСѓР±Р»СЊ");
         	  break;
         	  case 2:
-        		  System.out.println(byr + " рубля");
+        		  System.out.println(byr + " СЂСѓР±Р»СЏ");
         	  break;
         	  case 3:
-        		  System.out.println(byr + " рубля");
+        		  System.out.println(byr + " СЂСѓР±Р»СЏ");
         	  break;
         	  case 4:
-        		  System.out.println(byr + " рубля");
+        		  System.out.println(byr + " СЂСѓР±Р»СЏ");
         	  break;
         	  default:
-        	  	  System.out.println(byr + " рублей");
+        	  	  System.out.println(byr + " СЂСѓР±Р»РµР№");
         	  break;
             }
           }      

@@ -1,6 +1,8 @@
 package homework14;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 
 import org.codehaus.jackson.JsonGenerationException;
@@ -23,8 +25,8 @@ public class Ex1
 			Root user = new Root();
 	          try
 	        	{
-	        		user = (Root) mapper.readValue(new File ("homework14/test.json"),
-	                    Root.class);
+	        		BufferedReader reader = new BufferedReader(new FileReader("homework14/test.json"));
+	        		user = (Root) mapper.readValue(reader, Root.class);
 	            }
 	          catch (IOException ex)
 	        	  {System.out.println("Error = " + ex.getMessage());}

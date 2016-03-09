@@ -7,6 +7,7 @@ public class People
         private String name;
         private String surname;
         private long age;
+  // Вручную правил геттер-сеттер, т.к. jackson автоматом убирает is из булеана
         private boolean isDegree;
 		public long getId()
 			{

@@ -87,7 +87,7 @@ public class Ex1
 							target = sq.take();
 							System.out.println("2: Забираем json файл из очереди и парсим...");
 							root = parseByGson(target);
-							System.out.println("2: Вот данные из xml файла : [" + root.getName() + "...] и т.д.");
+							System.out.println("2: Вот данные из json файла : [" + root.getName() + "...] и т.д.");
 							System.out.println("Второй поток закончил работу...");
 						} 
 						catch (InterruptedException e) {

@@ -23,6 +23,13 @@ androidwork4
 	При выборе строки в Листе открывается новое Активити, с соответствующим текстом.
 *************************************
 
+androidwork5
+	добавил в androidwork4:
+		RecyclerView c CardWiew
+	а также RecyclerView Gridlayout  с перетаскиванием
+		RecyclerView с Header/Footer
+***************************************
+
 
 Homework1
 	1. Строки, длина строки, разбиение строки

@@ -8,13 +8,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="#87a4f5"
-        android:dividerHeight="3dp"
-        android:id="@+id/listv_v">
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:id="@+id/rv_list">
 
-    </ListView>
+    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

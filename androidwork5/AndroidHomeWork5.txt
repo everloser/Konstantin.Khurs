@@ -1,0 +1,9 @@
+﻿добавил в предыдущее задание (androidwork4):
+
+			RecyclerView c CardWiew
+
+	а также 	RecyclerView Gridlayout  с перетаскиванием
+
+			RecyclerView с Header/Footer
+
+Там (в androidwork4) получилось 4 списка, в главной активтити - 4 кнопки, по которым они (списки) вызываются.

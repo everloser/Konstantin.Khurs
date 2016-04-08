@@ -16,6 +16,6 @@
         </shape>
     </item>
     <item>
-        <bitmap android:src="@drawable/dog16"/>
+        <bitmap android:src="@drawable/sova_anmation_1"/>
     </item>
 </layer-list>

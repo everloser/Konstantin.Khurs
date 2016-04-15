@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LoginExample</string>
+    <string name="login_text">Login Page</string>
+    <string name="username_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="edittext_user">User email</string>
+    <string name="edittext_pass">Pass</string>
+    <string name="login_button">Login</string>
+    <string name="attempts_text">Attempts remains :</string>
+    <string name="user_button">Registration</string>
+    <string name="welcome_text">Registration</string>
+    <string name="register_button">Registration</string>
+    <string name="success">Successfully Connected</string>
+    <string name="reg_name">Username</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_pass">Password</string>
+</resources>
